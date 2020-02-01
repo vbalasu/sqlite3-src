@@ -1,4 +1,6 @@
-# How to compile sqlite3 + extension - CSV virtual table
+# How to compile sqlite3 and extension - CSV virtual table
+
+SQLite version 3.31.1 2020-01-27 19:55:54
 
 You can compile SQLite from sources, including extensions, as follows:
 
@@ -34,11 +36,13 @@ docker run -ti --rm -u 0 -v $(pwd):/host --entrypoint bash lambci/lambda:build-p
 Compiled binaries and extensions can be found here:
 
 Ubuntu:
-  - sqlite3
-  - csv.so
+  - See folder: ubuntu_sqlite-autoconf-3310100
 
-Lambda:
-  - sqlite3
-  - csv.so
+Lambda (CentOS):
+  - [Zip archive](https://github.com/vbalasu/sqlite3-src/raw/master/sqlite3_lambda.zip)
+  - See folder: lambda_sqlite-autoconf-3310100
+
+MacOS:
+  - See folder: macos_sqlite-autoconf-3310100
 
 See also: [Stack Overflow](https://stackoverflow.com/questions/59969377/how-to-compile-sqlite3-extension-csv-virtual-table)
